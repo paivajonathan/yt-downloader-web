@@ -1,6 +1,15 @@
 {% include 'partials/head.html' %}
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/home.css' %}" />
 
-
-<h1>Testando</h1>
+<h1>Welcome to YTDownloader!</h1>
+<h2>Place in the youtube link you wanna download from!</h2>
+<form action="/download" method="post">
+    <input type="text" name="link" id="link-input" />
+    <select name="format" id="format-select">
+        <option value="video">Video</option>
+        <option value="audio">Audio</option>
+    </select>
+</form>
 
 {% include 'partials/footer.html' %}

@@ -4,4 +4,5 @@ from downloaderhome.views import home
 
 urlpatterns = [
     path('', home, name='home'),
+    path('download/', name='download')
 ]

@@ -1,8 +1,8 @@
 from django.urls import path
-from downloaderhome.views import home
+from downloaderhome import views
 
 
 urlpatterns = [
-    path('', home, name='home'),
-    path('download/', name='download')
+    path('', views.home, name='home'),
+    path('download/', views.download, name='download')
 ]
